@@ -1,0 +1,16 @@
+{
+  "name": "Vikas Meena - Senior Product Manager",
+  "short_name": "Vikas Meena",
+  "description": "Senior Product Manager with IIM Bangalore MBA, specializing in 0-1 product development and platform scaling",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F59E0B",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
