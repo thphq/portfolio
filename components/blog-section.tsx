@@ -382,7 +382,19 @@ export default function BlogSection() {
 
             <div 
               className="prose prose-lg max-w-none text-neutral-700 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: selectedPost.content.replace(/\n/g, '<br/>').replace(/## /g, '<h2 class="text-2xl font-bold mt-8 mb-4 text-neutral-900">').replace(/<\/h2>/g, '</h2>').replace(/### /g, '<h3 class="text-xl font-semibold mt-6 mb-3 text-neutral-800">').replace(/<\/h3>/g, '</h3>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>') }}
+              dangerouslySetInnerHTML={{ 
+                __html: selectedPost.content
+                  .replace(/\n\n/g, '</p><p class="mb-4">')
+                  .replace(/\n/g, '<br/>')
+                  .replace(/## (.*?)(<br\/>|$)/g, '<h2 class="text-2xl font-bold mt-8 mb-4 text-neutral-900">$1</h2>')
+                  .replace(/### (.*?)(<br\/>|$)/g, '<h3 class="text-xl font-semibold mt-6 mb-3 text-neutral-800">$1</h3>')
+                  .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>')
+                  .replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<em class="italic text-neutral-700">$1</em>')
+                  .replace(/^- (.*?)(<br\/>|$)/gm, '<li class="ml-4 mb-2 text-neutral-700">• $1</li>')
+                  .replace(/^\d+\. (.*?)(<br\/>|$)/gm, '<li class="ml-4 mb-2 text-neutral-700 list-decimal">$1</li>')
+                  .replace(/`([^`]+)`/g, '<code class="bg-neutral-100 px-2 py-1 rounded text-sm font-mono text-neutral-800">$1</code>')
+                  .replace(/^> (.*?)(<br\/>|$)/gm, '<blockquote class="border-l-4 border-amber-500 pl-4 italic text-neutral-600 my-4">$1</blockquote>')
+              }}
             />
 
             <div className="mt-12 p-6 bg-neutral-50 rounded-lg">
@@ -551,7 +563,7 @@ export default function BlogSection() {
               <Button 
                 size="lg" 
                 className="bg-amber-600 hover:bg-amber-700 text-white"
-                onClick={() => window.location.href = '#contact'}
+                onClick={() => window.open('mailto:I@meenavik.com?subject=Product Strategy Discussion&body=Hi Vikas,%0D%0A%0D%0AI would like to discuss product strategy and explore collaboration opportunities...', '_blank')}
               >
                 Let's Connect
               </Button>

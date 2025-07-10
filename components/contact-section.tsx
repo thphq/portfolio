@@ -113,7 +113,7 @@ export default function ContactSection() {
                 <Button 
                   size="lg" 
                   className="w-full bg-amber-600 hover:bg-amber-700 text-white"
-                  onClick={() => window.open('mailto:I@meenavik.com', '_blank')}
+                  onClick={() => window.open('mailto:I@meenavik.com?subject=Product Management Opportunity&body=Hi Vikas,%0D%0A%0D%0AI would like to discuss...', '_blank')}
                   aria-label="Send email to Vikas Meena"
                 >
                   <Mail className="w-5 h-5 mr-2" />
@@ -124,11 +124,11 @@ export default function ContactSection() {
                   size="lg" 
                   variant="outline"
                   className="w-full border-white text-white bg-transparent hover:bg-white hover:text-neutral-900 transition-all duration-300"
-                  onClick={() => window.open('https://meenavik.com/resume', '_blank')}
+                  onClick={() => window.open('mailto:I@meenavik.com?subject=Resume Request&body=Hi Vikas,%0D%0A%0D%0ACould you please share your latest resume?', '_blank')}
                   aria-label="Download Vikas Meena's resume"
                 >
                   <FileText className="w-5 h-5 mr-2" />
-                  Download Resume
+                  Request Resume
                 </Button>
               </div>
             </div>
