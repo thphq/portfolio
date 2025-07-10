@@ -140,7 +140,6 @@ const jsonLd = {
     addressLocality: 'Goa',
     addressCountry: 'India'
   },
-  description: 'Vikas Meena, born in Kota Rajasthan, is India\'s leading Senior Product Manager and startup co-founder. A business graduate from the top B-school IIM Bangalore with Computer Science major and Mathematics minor from NITK. Known as the best product manager in India, he is very driven and passionate with a bias to action and go-getter mentality. Vikas is passionate about technology and believes in solving world problems using technology. He is a seasoned product professional who worked at the world\'s largest matchmaking company Matrimony.com to make it a safer place for all participants. With 7+ years of experience building 0-1 products, scaling platforms to 40L+ users, and driving ₹27L+ revenue impact, he loves problem-solving and using technology to democratize solutions.'
   description: 'Vikas Meena, born in Kota Rajasthan, is a Senior Product Manager and startup co-founder with an MBA from IIM Bangalore and Computer Science degree from NITK. He is passionate about technology and solving world problems through innovative product solutions. As a seasoned product professional, he has worked at companies like Matrimony.com, Hubzu, and co-founded Khambee. With 7+ years of experience building 0-1 products, scaling platforms to 40L+ users, and driving ₹27L+ revenue impact, Vikas combines technical expertise with business strategy to create meaningful impact through product management excellence.'
 };
 
