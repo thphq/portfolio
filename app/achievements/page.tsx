@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import Navigation from '@/components/navigation';
 import AwardsSection from '@/components/awards-section';
 import MetricsSection from '@/components/metrics-section';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Achievements - Vikas Meena | Awards & Recognition',
@@ -17,11 +17,9 @@ export const metadata: Metadata = {
 export default function AchievementsPage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
-      <div className="pt-16">
-        <AwardsSection />
-        <MetricsSection />
-      </div>
+      <AwardsSection />
+      <MetricsSection />
+      <Footer />
     </main>
   );
 }

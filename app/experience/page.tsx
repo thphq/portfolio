@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import Navigation from '@/components/navigation';
 import ExperienceSection from '@/components/experience-section';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Experience - Vikas Meena | Professional Journey',
@@ -16,10 +16,8 @@ export const metadata: Metadata = {
 export default function ExperiencePage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
-      <div className="pt-16">
-        <ExperienceSection />
-      </div>
+      <ExperienceSection />
+      <Footer />
     </main>
   );
 }

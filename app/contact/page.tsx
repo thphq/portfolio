@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import Navigation from '@/components/navigation';
 import ContactSection from '@/components/contact-section';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Contact - Vikas Meena | Get in Touch',
@@ -16,10 +16,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
-      <div className="pt-16">
-        <ContactSection />
-      </div>
+      <ContactSection />
+      <Footer />
     </main>
   );
 }

@@ -120,7 +120,9 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-base sm:text-lg md:text-xl text-neutral-500 max-w-3xl mx-auto leading-relaxed"
               >
-                Building 0-1 products and scaling platforms to millions of users<br className="hidden sm:inline" /> with proven expertise in driving measurable business impact
+                Passionate about democratizing technology to solve world problems<br className="hidden sm:inline" /> 
+                Building 0-1 products and scaling platforms to millions of users<br className="hidden sm:inline" /> 
+                with proven expertise in driving measurable business impact
               </motion.p>
             </div>
           }

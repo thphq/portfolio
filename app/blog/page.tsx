@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import BlogSection from '@/components/blog-section';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Blog - Vikas Meena | Product Management Insights',
@@ -14,8 +15,9 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen pt-16">
+    <main className="min-h-screen">
       <BlogSection />
+      <Footer />
     </main>
   );
 }
