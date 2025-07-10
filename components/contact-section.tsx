@@ -122,8 +122,8 @@ export default function ContactSection() {
                 
                 <Button 
                   size="lg" 
-                  variant="outline" 
-                  className="w-full border-neutral-400 text-white hover:bg-white hover:text-neutral-900 hover:border-white transition-all duration-300"
+                  variant="outline"
+                  className="w-full border-white text-white bg-transparent hover:bg-white hover:text-neutral-900 transition-all duration-300"
                   onClick={() => window.open('https://meenavik.com/resume', '_blank')}
                   aria-label="Download Vikas Meena's resume"
                 >
