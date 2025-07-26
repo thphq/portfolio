@@ -111,7 +111,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-neutral-600 leading-relaxed max-w-4xl mx-auto"
               >
-                Product Strategy Expert & Startup Co-founder
+                Passionate about democratizing technology to solve world problems
               </motion.h2>
               
               <motion.p
@@ -120,7 +120,6 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-base sm:text-lg md:text-xl text-neutral-500 max-w-3xl mx-auto leading-relaxed"
               >
-                Passionate about democratizing technology to solve world problems<br className="hidden sm:inline" /> 
                 Building 0-1 products and scaling platforms to millions of users<br className="hidden sm:inline" /> 
                 with proven expertise in driving measurable business impact
               </motion.p>
